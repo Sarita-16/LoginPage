@@ -14,3 +14,15 @@ btnPopup.addEventListener("click", () => {
 iconClose.addEventListener("click", () => {
   wrapper.classList.remove("active-popup");
 });
+
+let popup = document.getElementById("popup");
+let loginSubmit = document.getElementById("loginSubmit");
+
+function openPopup() {
+  popup.classList.add("open-popup");
+  loginSubmit.classList.remove("close-wrapper");
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+}

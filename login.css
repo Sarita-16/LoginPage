@@ -34,7 +34,7 @@ header a {
     font-size: 37px;
     font-family: "Times New Roman", Times, serif;
     font-weight: 500;
-    padding-inline: 10rem;
+    padding-inline: 6rem;
 }
 
 header a img {
@@ -225,4 +225,55 @@ header a:hover {
 
 .login-register p a:hover {
     color: rgb(7, 93, 163);
+}
+
+
+/***************************************************************************************************************/
+
+.popUp {
+    width: 60%;
+    background: rgb(15, 3, 63);
+    border: 2px solid #7dcffc;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 0 0 20px rgb(26, 108, 174);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-wrapper {
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.popUp h2 {
+    font-size: 2rem;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.popUp button {
+    height: 45px;
+    width: 100px;
+    background:  #94d5f8;
+    border: 1.5px solid rgb(15, 3, 63);
+    cursor: pointer;
+    font-size: 22px;
+    color: rgb(15, 3, 63);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 5px 5px rgba(15, 93, 157, 0.4);
 }

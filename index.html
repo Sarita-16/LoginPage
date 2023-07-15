@@ -19,7 +19,7 @@
       </nav>
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper" id="loginSubmit">
       <span class="icon-close"><i class="bx bx-x"></i></span>
 
       <div class="form-box login">
@@ -42,7 +42,7 @@
             <a href="#">Forgot Password? </a>
           </div>
 
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn" onclick="openPopup()">Login</button>
 
           <div class="login-register">
             <p>
@@ -53,6 +53,15 @@
         </form>
       </div>
     </div>
+
+    <!-- *************************************************************************************************************** -->
+
+    <div class="popUp" id="popup">
+      <h2>Logged in Successfully</h2>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+    <!-- *************************************************************************************************************** -->
 
     <script src="login.js"></script>
   </body>
